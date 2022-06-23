@@ -10,9 +10,10 @@ public class SmileController {
   @Autowired
   SmileRepository smileRepository;
 
-  @GetMapping("/smile")
-  public Iterable<Smile> getSmile(){
-    return smileRepository.findAll();
+  @GetMapping("/api/smile")
+  public Smile createAndGetSmiles(){
+    Smile newSmile = new Smile(true,false);
+    return smileRepository.save(newSmile);
   }
 
   
