@@ -12,6 +12,7 @@ public class SmileTest {
     assertEquals(true, smile.getIsCrying());
     assertEquals(false, smile.getIsLaughing());
     assertEquals(null, smile.getId());
+    
 
   }
   

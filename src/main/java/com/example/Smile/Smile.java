@@ -11,6 +11,7 @@ import javax.persistence.Table;
 @Table(name= "smiles")
 public class Smile {
 
+  
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
   private Long id;

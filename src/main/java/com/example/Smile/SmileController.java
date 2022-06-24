@@ -14,6 +14,7 @@ public class SmileController {
   public Smile createAndGetSmiles(){
     Smile newSmile = new Smile(true,false);
     return smileRepository.save(newSmile);
+    
   }
 
   

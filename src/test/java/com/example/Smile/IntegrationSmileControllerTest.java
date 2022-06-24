@@ -32,6 +32,7 @@ public class IntegrationSmileControllerTest {
     mvc.perform(MockMvcRequestBuilders.get("/api/smile").contentType(MediaType.APPLICATION_JSON))
         .andExpect(status().isOk())
         .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
+        
   }
   
 }
